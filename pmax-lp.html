@@ -1,0 +1,344 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Systems | Your MSP Efficiency Partner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #121212;
+            color: #E0E0E0;
+        }
+        .bg-dark-section {
+            background-color: #1a1a1a;
+        }
+        .accent-orange {
+            color: #f05a28;
+        }
+        .bg-accent-orange {
+            background-color: #f05a28;
+        }
+        .border-accent-orange {
+            border-color: #f05a28;
+        }
+        .btn-primary {
+            background-color: #f05a28;
+            color: #ffffff;
+            font-weight: 600;
+            padding: 12px 24px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #d94e20;
+        }
+        .btn-secondary {
+            background-color: transparent;
+            color: #f05a28;
+            font-weight: 600;
+            padding: 10px 20px;
+            border-radius: 8px;
+            border: 2px solid #f05a28;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .btn-secondary:hover {
+            background-color: #f05a28;
+            color: #ffffff;
+        }
+        .form-input {
+            background-color: #2a2a2a;
+            border: 1px solid #444;
+            color: #E0E0E0;
+            border-radius: 8px;
+            padding: 12px;
+            width: 100%;
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: #f05a28;
+            box-shadow: 0 0 0 2px rgba(240, 90, 40, 0.5);
+        }
+        .testimonial-card {
+            background-color: #2a2a2a;
+            border-left: 4px solid #f05a28;
+        }
+        .hero-section {
+            background-image: url('/carbonsys/carbon-bg-black.png');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+        /* Custom styles for the slider */
+        input[type=range] {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 100%;
+            height: 8px;
+            background: #4a4a4a;
+            border-radius: 5px;
+            outline: none;
+        }
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 24px;
+            height: 24px;
+            background: #f05a28;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+        input[type=range]::-moz-range-thumb {
+            width: 24px;
+            height: 24px;
+            background: #f05a28;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- HEADER -->
+    <header class="py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="#">
+                <!-- Using the provided white logo -->
+                <img src="/carbonsys/logo-white.png" alt="Carbon Systems" class="h-10">
+            </a>
+            <a href="#roi-calculator" class="btn-secondary hidden md:inline-block">Calculate ROI</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section py-16 md:py-24">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">Stop Wasting Your Most Valuable Resource: <span class="accent-orange">Technician Time.</span></h1>
+                    <p class="text-lg md:text-xl text-gray-300 mb-8">Your techs spend 2+ hours on every new PC deployment. That's billable time you're losing. We ship client-ready hardware with your RMM pre-installed and enrolled in Autopilot, so your team can focus on what matters.</p>
+                </div>
+                <div class="bg-dark-section p-8 rounded-lg shadow-2xl">
+                    <h2 class="text-2xl font-bold text-white text-center mb-6">Get Your Time Back.</h2>
+                    <form action="#" method="POST">
+                        <div class="space-y-4">
+                            <input type="text" name="first-name" placeholder="First Name" class="form-input">
+                            <input type="text" name="last-name" placeholder="Last Name" class="form-input">
+                            <input type="text" name="company-name" placeholder="Company Name" class="form-input">
+                            <input type="email" name="work-email" placeholder="Work Email" class="form-input">
+                            <button type="submit" class="btn-primary w-full">Request a Partner Quote</button>
+                        </div>
+                    </form>
+                    <div class="text-center mt-6">
+                        <p class="text-gray-400">Not sure how much you'll save?</p>
+                        <a href="#roi-calculator" class="font-semibold accent-orange hover:underline">Try Our ROI Calculator</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROBLEM SECTION -->
+    <section class="bg-dark-section py-16 md:py-24">
+        <div class="container mx-auto px-6 text-center max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Your Highest-Paid Tech's Favorite Tool Shouldn't Be a Box Cutter.</h2>
+            <p class="text-lg text-gray-300 mb-4">You know the drill. A new PC arrives. Your best technician spends hours unboxing it, removing bloatware, installing your RMM agent, manually enrolling it in Intune, and repacking it for the client.</p>
+            <p class="text-lg text-gray-300">That's not just inefficient it's expensive. Every minute a tech spends on these repetitive, low-value tasks is a minute they aren't spending on billable projects, strategic client work, or closing new business. You're paying a premium for skilled labor to perform a logistical task. It's a hidden tax on your profitability.</p>
+        </div>
+    </section>
+
+    <!-- SOLUTION SECTION -->
+    <section class="py-16 md:py-24">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold">Go From Purchase Order to Client-Ready in <span class="accent-orange">One Step.</span></h2>
+                <p class="mt-4 text-lg text-gray-300 max-w-3xl mx-auto">Carbon Systems is more than a hardware vendor; we are your efficiency partner. We've built our entire process around a single goal: eliminating the operational drag of hardware deployment for MSPs.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature Card 1 -->
+                <div class="bg-dark-section p-6 rounded-lg">
+                    <h3 class="font-bold text-xl mb-2 accent-orange">Bloat-Free, Managed OS</h3>
+                    <p class="text-gray-300">A clean, patched, and updated Windows image. No more wasted time removing trial software.</p>
+                </div>
+                <!-- Feature Card 2 -->
+                <div class="bg-dark-section p-6 rounded-lg">
+                    <h3 class="font-bold text-xl mb-2 accent-orange">Your RMM, Pre-Installed</h3>
+                    <p class="text-gray-300">We install your specific RMM agent (ConnectWise, Kaseya, Datto, etc.) so devices are ready for management out of the box.</p>
+                </div>
+                <!-- Feature Card 3 -->
+                <div class="bg-dark-section p-6 rounded-lg">
+                    <h3 class="font-bold text-xl mb-2 accent-orange">Autopilot Ready</h3>
+                    <p class="text-gray-300">We pre-enroll every device in your client's Microsoft 365 tenant. The end-user simply logs in, and their profile is deployed. Zero touches from your team.</p>
+                </div>
+                <!-- Feature Card 4 -->
+                <div class="bg-dark-section p-6 rounded-lg">
+                    <h3 class="font-bold text-xl mb-2 accent-orange">3-Year Advanced Warranty</h3>
+                    <p class="text-gray-300">Minimize client downtime with a standard advanced replacement warranty. We ship a new unit immediately.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS SECTION -->
+    <section class="bg-dark-section py-16 md:py-24">
+        <div class="container mx-auto px-6 max-w-4xl text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12">Your New Workflow</h2>
+            <div class="relative">
+                <!-- The connecting line -->
+                <div class="hidden md:block absolute top-8 left-0 w-full h-0.5 bg-gray-600"></div>
+                <div class="relative flex flex-col md:flex-row justify-between items-start gap-8">
+                    <!-- Step 1 -->
+                    <div class="flex-1 flex flex-col items-center text-center">
+                        <div class="bg-accent-orange w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold text-white mb-4 z-10 shrink-0">1</div>
+                        <h3 class="font-bold text-xl mb-2">Place Your Order</h3>
+                        <p class="text-gray-300">Tell us what you need and which RMM to install.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="flex-1 flex flex-col items-center text-center">
+                        <div class="bg-accent-orange w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold text-white mb-4 z-10 shrink-0">2</div>
+                        <h3 class="font-bold text-xl mb-2">We Configure & Ship</h3>
+                        <p class="text-gray-300">We handle the complete setup and ship directly to your end-client.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="flex-1 flex flex-col items-center text-center">
+                        <div class="bg-accent-orange w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold text-white mb-4 z-10 shrink-0">3</div>
+                        <h3 class="font-bold text-xl mb-2">Client Logs In</h3>
+                        <p class="text-gray-300">The user powers on the device and logs in. Your work is done.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROI CALCULATOR SECTION -->
+    <section id="roi-calculator" class="py-16 md:py-24">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">See Your Exact ROI in <span class="accent-orange">30 Seconds</span></h2>
+                    <p class="text-lg text-gray-300">Don't just take our word for it. Plug in your numbers and see the real-world labor cost you can save each month.</p>
+                </div>
+                <div class="bg-dark-section p-8 rounded-lg shadow-2xl">
+                    <div class="space-y-6">
+                        <div>
+                            <label for="hourly-rate" class="block text-sm font-medium text-gray-300 mb-1">Technician's Hourly Rate ($)</label>
+                            <input type="number" id="hourly-rate" value="75" class="form-input">
+                        </div>
+                        <div>
+                            <label for="pcs-deployed" class="block text-sm font-medium text-gray-300 mb-1">New PCs Deployed / Month</label>
+                            <input type="number" id="pcs-deployed" value="10" class="form-input">
+                        </div>
+                        <div>
+                            <label for="hours-saved" class="block text-sm font-medium text-gray-300 mb-1">Hours Saved / PC (<span id="hours-saved-value">1.5</span>)</label>
+                            <input type="range" id="hours-saved" min="0.5" max="4" step="0.25" value="1.5" class="">
+                        </div>
+                    </div>
+                    <div class="mt-8 pt-6 border-t border-gray-600 text-center">
+                        <div>
+                            <p class="text-gray-400 text-lg">Monthly Labor Savings</p>
+                            <p id="monthly-savings" class="text-4xl font-extrabold accent-orange">$1,125</p>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-gray-400 text-lg">Annual Labor Savings</p>
+                            <p id="annual-savings" class="text-5xl font-extrabold text-white">$13,500</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SOCIAL PROOF SECTION -->
+    <section class="bg-dark-section py-16 md:py-24">
+        <div class="container mx-auto px-6 max-w-4xl text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12">The Partner Built for MSPs, by MSPs</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="testimonial-card p-8 rounded-lg text-left">
+                    <p class="text-lg text-gray-200 italic">"Their support is fantastic... one of the easier vendors to order from. The advanced replacement warranty is a huge plus."</p>
+                    <p class="mt-4 font-bold text-right accent-orange">- MSP Owner, Reddit /r/msp</p>
+                </div>
+                <div class="testimonial-card p-8 rounded-lg text-left">
+                    <p class="text-lg text-gray-200 italic">"The NUCs are a no-brainer. Solid, reliable, and we save a ton of time on deployment. It's our standard desktop."</p>
+                    <p class="mt-4 font-bold text-right accent-orange">- vCIO, 25-Person MSP</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OBJECTION HANDLING SECTION -->
+    <section class="py-16 md:py-24">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-center">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5a3ae5e68a02c782e7da67ce/9880cbcb-4ef5-4669-867f-28e6676e55d9/Iridium+16+Top.png?format=1500w" alt="Carbon Systems Iridium Laptop" class="rounded-lg mx-auto">
+                </div>
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Light by Design. <span class="accent-orange">Tough by Warranty.</span></h2>
+                    <p class="text-lg text-gray-300">Our Iridium laptops are engineered with a lightweight magnesium alloy chassis to give your clients the ultimate mobility. But light doesn't mean fragile. We stand behind our build quality with a standard 3-Year Advanced Replacement Warranty on all our hardware. If there's a problem, a new unit is on its way. No questions, no delays.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA SECTION -->
+    <section class="bg-dark-section py-16 md:py-24">
+        <div class="container mx-auto px-6 text-center max-w-3xl">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-6">Ready to Reclaim Your Time?</h2>
+            <p class="text-lg text-gray-300 mb-8">Stop losing money on inefficient deployments. Partner with Carbon Systems and turn your hardware procurement into a competitive advantage.</p>
+            <a href="#" class="btn-primary inline-block">Request My Partner Quote</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark-section py-8">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <img src="/carbonsys/logo-white.png" alt="Carbon Systems" class="h-8 mx-auto mb-4">
+            <p>&copy; 2025 Carbon Systems. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // ROI Calculator Logic
+        const hourlyRateEl = document.getElementById('hourly-rate');
+        const pcsDeployedEl = document.getElementById('pcs-deployed');
+        const hoursSavedEl = document.getElementById('hours-saved');
+        const hoursSavedValueEl = document.getElementById('hours-saved-value');
+        const monthlySavingsEl = document.getElementById('monthly-savings');
+        const annualSavingsEl = document.getElementById('annual-savings');
+
+        function calculateROI() {
+            const hourlyRate = parseFloat(hourlyRateEl.value) || 0;
+            const pcsDeployed = parseInt(pcsDeployedEl.value) || 0;
+            const hoursSaved = parseFloat(hoursSavedEl.value) || 0;
+
+            const monthlySavings = hourlyRate * pcsDeployed * hoursSaved;
+            const annualSavings = monthlySavings * 12;
+
+            // Format to currency
+            const formatter = new Intl.NumberFormat('en-US', {
+                style: 'currency',
+                currency: 'USD',
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 0,
+            });
+
+            monthlySavingsEl.textContent = formatter.format(monthlySavings);
+            annualSavingsEl.textContent = formatter.format(annualSavings);
+            hoursSavedValueEl.textContent = hoursSaved;
+        }
+
+        // Event Listeners
+        hourlyRateEl.addEventListener('input', calculateROI);
+        pcsDeployedEl.addEventListener('input', calculateROI);
+        hoursSavedEl.addEventListener('input', calculateROI);
+
+        // Initial calculation on page load
+        document.addEventListener('DOMContentLoaded', calculateROI);
+    </script>
+</body>
+</html>
